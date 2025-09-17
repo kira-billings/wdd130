@@ -1,14 +1,22 @@
+:root {
+    --dark-border: black;
+    --dark-background: rgb(82, 54, 100);
+    --light-background: rgb(250, 230, 230);
+    --dark-font: black;
+    --light-font: rgb(250, 230, 230);
+
+}
 nav {
-    background-color: darkblue;
+    background-color: var(--dark-background);
     padding: 10px;
 }
 nav a {
-    color: white;
+    color: var(--light-font);
     display: block;
     padding: 20px;
 }
 h1 {
-    color: darkblue;
+    color: var(--dark-font);
 }
 main {
     max-width: 840px;
@@ -16,7 +24,7 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--dark-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -26,10 +34,10 @@ p {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 2px solid rgb(0 0 0 / 0.2);
+    border: 2px solid var(--dark-border);
     padding: 5px;
-    background-color: #fbe8ff;
-    color: black;
+    background-color: var(--light-background);
+    color: var(--dark-font);
     text-align: center
 }
 aside img {
@@ -38,6 +46,6 @@ aside img {
 }
 footer {
     margin-top: 15px;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--dark-border);
     text-align: center;
 }
