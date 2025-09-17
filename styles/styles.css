@@ -1,9 +1,9 @@
 :root {
     --dark-border: black;
     --dark-background: rgb(82, 54, 100);
-    --light-background: rgb(250, 230, 230);
+    --light-background: rgb(234, 203, 238);
     --dark-font: black;
-    --light-font: rgb(250, 230, 230);
+    --light-font: rgb(234, 203, 238);
 
 }
 nav {
