@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+    font-size: 16px;
+    font-family: Mali, cursive;
+}
 :root {
     --dark-border: black;
     --dark-background: rgb(82, 54, 100);
@@ -32,7 +35,7 @@ main img {
     height: auto;
     padding: 5px;
     box-shadow: 0 0 30px gray;
-    margin: 1rem;
+    margin: 0 0 1rem 1rem;
     background-color: var(--dark-background);
     border: 2px solid var(--dark-border);
     color: var(--dark-font);
