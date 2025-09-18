@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
     --dark-border: black;
     --dark-background: rgb(82, 54, 100);
     --light-background: rgb(234, 203, 238);
     --dark-font: black;
-    --light-font: rgb(234, 203, 238);
+    --light-font: white;
 
 }
 nav {
@@ -24,28 +30,51 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid var(--dark-border);
-    padding: 2px;
+    padding: 5px;
     box-shadow: 0 0 30px gray;
+    margin: 1rem;
+    background-color: var(--dark-background);
+    border: 2px solid var(--dark-border);
+    color: var(--dark-font);
+    float: right;
 }
 p {
     padding: 0;
 }
 aside {
+    position: relative;
     width: 20rem;
-    margin: 1rem;
-    border: 2px solid var(--dark-border);
-    padding: 5px;
-    background-color: var(--light-background);
-    color: var(--dark-font);
-    text-align: center
+    text-align: center;
+    
+}
+li {
+    margin-left: 20px;
+}
+aside h2 {
+    position: absolute;
+    top: 110px;
+    left: 125px;
+    color: var(--light-font)
 }
 aside img {
     width: 200px;
     height: auto;
+    padding: 5px;
+    background-color: var(--dark-background);
+    border: 2px solid var(--dark-border);
+    color: var(--dark-font);
 }
+
 footer {
     margin-top: 15px;
     border-top: 2px solid var(--dark-border);
     text-align: center;
+}
+/* Class selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--light-background);
+    border: 2px solid var(--dark-border);
+    color: var(--dark-font);
 }
