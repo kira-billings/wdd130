@@ -15,21 +15,38 @@ body {
     --light-font: white;
 
 }
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: var(--dark-background);
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: space-evenly;
 }
 nav a {
     color: var(--light-font);
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
 }
+
 h1 {
     color: var(--dark-font);
 }
-main {
-    max-width: 840px;
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
 }
+
 main img {
     width: 150px;
     height: auto;
@@ -48,7 +65,8 @@ aside {
     position: relative;
     width: 20rem;
     text-align: center;
-    
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 li {
     margin-left: 20px;
