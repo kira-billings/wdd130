@@ -4,18 +4,46 @@
     --secondary-color: rgb(237, 205, 163);
     --accent1-color: rgb(64, 55, 124);
     --accent2-color: lightyellow;
+    --accent3-color: rgb(41, 170, 209);
     --body-font: Arial, Helvetica, sans-serif; 
 }
 
 header {
     background-color: white;
-    color: var(--accent2-color)
+    color: var(--accent3-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-image: linear-gradient(to bottom, rgb(247, 224, 191), rgb(190, 233, 247));
+    border:4px solid;
+    border-style: solid;
+}
+
+.navigation {
+   display: flex;
+   list-style: none;
+  
+}
+.navigation {
+   flex: 1 1 auto;
+
+}
+
+.navigation li {
+   display: block;
+   color: navy;
+   padding: 20px;
+   text-decoration: none;
+   font-size: 1.5rem;
+   
+
 }
  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    align-content: center;
  }
+
  body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -31,7 +59,9 @@ header {
  nav, p, section, article {
     margin: 16px;
     padding: 8px;
+
  }
+
  .socialmedia a {
     text-decoration: none;
  }
@@ -53,7 +83,65 @@ header {
     background-color: var(--accent1-color);
     color: white;
  }
+
+ .hero article {
+   background-image: linear-gradient(to bottom, rgb(247, 224, 191), rgb(190, 233, 247));
+   border:4px solid;
+   border-style: solid; 
+   margin: 0;
+   border-color: var(--accent3-color);
+   display: grid;
+   grid-template-columns: 4fr 1fr;
+ }
+ 
  .hero article img {
-    float: right;
-    width: 125px;
+   grid-column: 2;
+   display: flex;
+   align-self: center; 
+   width: 125px;
+
+ }
+
+ .history {
+   background-image: linear-gradient(to bottom, rgb(247, 224, 191), rgb(190, 233, 247));
+   border:4px solid;
+   border-style: solid; 
+   margin: 0;
+   border-color: var(--accent3-color);
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   
+}
+.history img{
+   display: flex;
+   align-self: center; 
+   justify-self: center;
+   width: 200px;
+}
+ h2 {
+   grid-column: span 5;
+   padding: 10px;
+   text-align: center;
+ }
+ .adventures {
+   background-image: linear-gradient(to bottom, rgb(247, 224, 191), rgb(190, 233, 247));
+   border:4px solid;
+   border-style: solid; 
+   margin: 0;
+   border-color: var(--accent3-color);
+
+ }
+ figure {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 15px;
+ }
+ .adventures img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+ }
+ footer {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
  }
