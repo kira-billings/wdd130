@@ -7,37 +7,48 @@
     <title>WDD130 | HTML Form - User Poll</title>
     <meta name="description" content="poll, WDD130, form, html">
     <meta name="author" content="Kira Billings">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
+    <header style="text-align: center;">WDD130 | HTML Form - User Poll</header>
     <main>
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label>Full name: <input type="text" name="fullname"></label>
-                <label>Email: <input type="email" name="useremail"></label>
+                <div class="form-item column2">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">    
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
             </fieldset>
             <fieldset> 
                 <legend>Questions</legend>
-                <label for="browser">What is your favorite browser?</label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="edge">Edge</option>
-                    <option value="brave">Brave</option>
-                    <option value="other">other</option>
-                </select>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <label for="feedback">List the places you have lived:</label>>
-                <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                <div class="form-item column1">
+                    <label for="browser" style="text-align: left">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet"><br>
+                </div>
+                <div class="form-item">
+                    <label for="feedback" style="text-align: left">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea><br>
+                </div>
             </fieldset>
-            <fieldset>
-                <button type="submit">Submit Poll</button>
-            </fieldset>
+            <button type="submit">Submit Poll</button>
+            </div>
         </form>
     </main>
-    
     <footer>
         <p>&copy;2025 🌈 HTML Form - User Poll Activity 🌈 Kira Billings 🌈 Utah, USA</p>
     </footer>
