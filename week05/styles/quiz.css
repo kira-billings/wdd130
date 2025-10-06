@@ -35,14 +35,15 @@ input, textarea, select {
 
 
 button {
+    display: flex;
+    justify-self: center;
     background-color: navy;
     color: white;
-    margin: 0 auto;
     display: block;
     border-radius: .5rem;
     padding: .5rem;
     box-shadow: 10 10 .5 .5 gray;
-    margin: 1rem;
+    margin: 1rem 1rem 0;
 }
 code {
     display: block;
@@ -56,4 +57,9 @@ code {
     border: 1px solid black;
     padding: 2rem;
     text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
