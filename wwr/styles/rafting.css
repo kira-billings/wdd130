@@ -57,6 +57,7 @@ header, main, footer {
  nav, p, section, article {
     margin: 16px;
     padding: 8px;
+    
  }
 
  .socialmedia a {
@@ -85,12 +86,10 @@ header, main, footer {
  }
 
  h1 {
-   
    top: 0px;
    width: 100%;
    padding: 10px;
    text-align: center;
-   opacity: 0.7;
    background-color: var(--accent1-color);
    color: white;
  }
@@ -143,7 +142,7 @@ h2 {
    padding-bottom: 50px;
  }
 
-  .adventures figure img {
+.adventures figure img {
    width: 100%;
    height: 100%; 
 }
@@ -153,45 +152,65 @@ h2 {
    grid-template-columns: 2fr 1fr;
  }
 
+.contact {
+   display: flexbox;
+   justify-items: center;
+}
+.contact li {
+   padding: 5px
+}
+
+ iframe {
+   width: 100%;
+   height: 100%
+ }
+
  /* This is added in for the forms */
  form {
-  
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    display: grid;
+   padding: .5rem;
+   border: 1px solid rgb(0 0 0 / 0.1);
+   display: grid;
 }
 
 fieldset {
-    display: grid;
-    grid-gap: .5rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    padding: 1rem;
-}
-legend {
-    padding: 0.5rem;
-    color: navy;
-    font-size: 1.3em;
+   display: grid;
+   grid-gap: .5rem;
+   margin: 1rem;
+   padding: 1rem;
 }
 
 label, input, button, select, textarea {
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+h3 {
+   font-size: 1rem;
+   padding: .5rem 0;
+}
 label {
     text-align: right;
     padding-right: 1rem;
 }
+
 /* this next part is critical to provide spacing inside of the form input elements */
 input, select {
-    padding: 0.5rem;
+    padding: .5rem;
     font-size: 1.1rem;
 }
 
+textarea {
+   width: 100%;
+   resize: vertical;
+}
+::placeholder {
+   padding: 0 10px;
+}
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
     vertical-align: bottom;
+    float: left;
+    margin-right: 5px
 }
 
 button {
@@ -215,6 +234,10 @@ button:hover {
    border-color: var(--accent3-color);
 }
 
+.companyinfo {
+   padding: 1rem;
+}
+
 section {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -229,11 +252,6 @@ section {
    min-height: 300px;
 }
 
-box {
-   border: 1px solid rgb(0 0 0 / 0.1);
-   display: grid;
-   margin: 1rem;
-}
 p {
    display: grid;
    justify-content: center;
