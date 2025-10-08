@@ -240,7 +240,6 @@ button:hover {
 section {
    display: grid;
    grid-template-columns: 1fr 1fr;
-
 }
 
 .employee {
@@ -254,4 +253,51 @@ section {
 p {
    display: grid;
    justify-content: center;
+}
+
+.home {
+   background-image: linear-gradient(to bottom, rgb(247, 224, 191), rgb(190, 233, 247));
+   border:4px solid;
+   border-style: solid; 
+   margin: 0;
+   border-color: var(--accent3-color);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.home img{
+   display: flex;
+   align-self: center; 
+   justify-self: center;
+   width: 200px;
+}
+
+.perfect {
+   background-image: linear-gradient(to bottom, rgb(247, 224, 191), rgb(190, 233, 247));
+   border:4px solid;
+   border-style: solid; 
+   margin: 0;
+   border-color: var(--accent3-color);
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.calltoaction {
+   display: flex;
+   margin: 1rem;
+   background-color: whitesmoke;
+   color: whitesmoke;
+   border: none;
+   border-radius: .5rem;
+   padding: .75rem;
+   font-size: 1.2rem;
+}
+
+.purpose-offerings {
+   display: grid;
+}
+
+.purp-off-child {
+   display: flex;
+   justify-content: center;
+
 }
