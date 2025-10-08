@@ -153,7 +153,6 @@ h2 {
  }
 
 .contact {
-   display: flexbox;
    justify-items: center;
 }
 .contact li {
