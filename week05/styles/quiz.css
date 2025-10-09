@@ -6,7 +6,7 @@
 }
 
 main {
-    max-width: 500ox;
+    max-width: 500px;
     margin: 1rem;
     border: 1px solid black;
     padding: 1rem;
@@ -47,9 +47,12 @@ button {
 }
 code {
     display: block;
-    color: black;
+    color: white;
     padding: .5rem;
-   
+    background-color: black;
+    margin: 5px auto;
+    width: 50%
+    
 }
 
 .box {
